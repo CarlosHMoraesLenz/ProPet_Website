@@ -1,0 +1,544 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&display=swap");
+
+body {
+  background-color: #eee;
+  font-family: "Baloo Da 2", cursive;
+}
+
+@media (max-width: 768px) {
+  /* #region HeaderMob*/
+  .headerDesk {
+    display: none;
+  }
+  .headerMob {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    color: #888;
+    background-color: #345e46;
+    align-items: center;
+  }
+  /* #region Logo*/
+  .headerMob .logo {
+    flex-basis: 30%;
+    height: 50px;
+  }
+  .headerMob .logo img {
+    display: block;
+    margin: 2px auto;
+    max-height: 90%;
+  }
+  /* #endregion Logo*/
+  /* #region Nav*/
+  .headerMob > .navMob {
+    position: relative;
+    display: flex;
+    flex-basis: 100vw;
+    justify-content: flex-end;
+    margin-right: 4%;
+  }
+  .headerMob .navMob > label {
+    width: 40px;
+    height: 40px;
+    background-image: url("../imgs/menu.svg");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  .headerMob .navMob .navUlMob {
+    display: none;
+  }
+  .headerMob .navMob .navUlMob {
+    position: absolute;
+    height: auto;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    margin-top: 45px;
+    background-color: #345e46;
+    border: solid 1px #345e46;
+  }
+  .headerMob .navMob .navUlMob .link {
+    list-style-type: none;
+    text-align: center;
+    width: 110px;
+    height: 100%;
+  }
+  .headerMob .navMob .navUlMob .link a {
+    color: #888;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .headerMob .navMob .navUlMob .link:hover {
+    background-color: #579b74;
+  }
+  .headerMob .navMob .navUlMob .link a:hover {
+    color: #000;
+  }
+  .headerMob .navMob .navUlMob .pageOn {
+    background-color: #579b74;
+  }
+  .headerMob .navMob .navUlMob .pageOn a {
+    color: #000;
+  }
+
+  /* #endregion Nav*/
+
+  /* #endregion Header*/
+
+  /* #region Footer*/
+  .footer {
+    width: 100%;
+    background-color: #0c0c0c;
+    display: block;
+  }
+
+  .footer .linhaVertivalFooter {
+    height: 1px;
+    background-color: #345e46;
+    margin: 0 5px;
+  }
+  .footer .logoFooter {
+    padding: 10px 0;
+  }
+  .footer .logoFooter .imgLogoFooter {
+    max-width: 100px;
+    display: block;
+    margin: auto;
+  }
+  .footer .logoFooter .h1LogoFooter {
+    text-align: center;
+    color: #999;
+  }
+  .footer .enderecoFooter {
+    color: #999;
+    padding: 10px;
+    display: block;
+    padding: 10px;
+  }
+  .footer .contatoFooter {
+    margin: auto 0;
+    padding: 10px;
+    color: #999;
+  }
+  .footer .formContatoFooter .btnformContatoFooter {
+    background-color: #579b74;
+    font-size: 15px;
+    display: block;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    padding: 1px 5px;
+  }
+  /* #endregion Footer*/
+
+  /* #region MainIndex*/
+  .main {
+    width: 100%;
+  }
+
+  /* #region Serviços*/
+  .main .servicosMain {
+    width: 90%;
+    background-color: #579b74;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .main .servicosMain .tiposServicosMain {
+    margin-top: 5px;
+    margin-left: 5%;
+    font-size: 18px;
+    line-height: 2;
+  }
+  .main .servicosMain .infoServicosMain {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .main .servicosMain .infoServicosMain .infoHashtag {
+    font-size: 12px;
+  }
+  .main .servicosMain a {
+    margin-top: 5px;
+    border: none;
+    text-decoration: none;
+    background-color: #579b74;
+    cursor: pointer;
+    color: #273a05;
+    display: flex;
+    justify-content: flex-end;
+  }
+  /* #endregion Serviços*/
+
+  /* #region Sobre nos*/
+  .main .aboutUsMain {
+    width: 90%;
+    background-color: #579b74;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .main .aboutUsMain .imgAboutUsMain {
+    flex-basis: 95%;
+  }
+  .main .aboutUsMain .imgAboutUsMain img {
+    max-width: 100%;
+    margin-top: 20px;
+    border-radius: 5px;
+  }
+  .textAboutUsMain {
+    flex-basis: 95%;
+  }
+  /* #endregion Sobre nos*/
+
+  /* #endregion MainIndex*/
+
+  /* #region MainServiços*/
+  .mainservicos {
+    width: 90%;
+    margin: 10px auto;
+    background-color: #579b74;
+    border-radius: 10px;
+  }
+  .mainservicos .explicaServicos {
+    padding: 5px;
+  }
+  .mainservicos .escolhaServicos {
+    width: 90%;
+    display: block;
+    padding: 10px;
+    margin: auto;
+  }
+  .mainservicos .escolhaServicos .espaco {
+    padding: 10px;
+  }
+  .mainservicos .escolhaServicos .btn {
+    background-color: #4a4b4a;
+    display: block;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+  .mainservicos .escolhaServicos .campoText {
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    display: block;
+  }
+  .mainservicos .escolhaServicos .TextTitle {
+    font-size: 20px;
+  }
+  /* #endregion Serviços*/
+
+  /* #region MainApp*/
+  .mainApp {
+    width: 94%;
+    margin: 10px auto;
+  }
+  .mainApp .sobreApp {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #579b74;
+    padding: 5px;
+  }
+  .mainApp .sobreApp .conteudo {
+    display: block;
+  }
+  .mainApp .sobreApp .conteudo img {
+    max-width: 300px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+  }
+  .mainApp .infoapp {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #579b74;
+    margin-top: 10px;
+    padding: 5px;
+  }
+  .mainApp .infoapp .conteudo {
+    display: block;
+    padding: 10px;
+  }
+  .mainApp .infoapp .conteudo .imgconteudo {
+    display: flex;
+  }
+  .mainApp .infoapp .conteudo .imgconteudo img {
+    max-width: 40%;
+    margin: auto;
+  }
+  /* #endregion */
+}
+
+@media (min-width: 768px) {
+  /* #region headerDesks*/
+  .headerMob {
+    display: none;
+  }
+  .headerDesk {
+    width: 100%;
+    display: flex;
+    height: 50px;
+    background-color: #345e46;
+  }
+
+  /* #region Logo*/
+  .headerDesk .logo {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+  }
+  .headerDesk .logo .imgLogoHeaderDesk {
+    width: 48px;
+    margin: 0px 5px;
+  }
+  .headerDesk .logo .h1LogoHeaderDesk {
+    color: #999;
+  }
+  /* #endregion Logo*/
+
+  /* #region Nav*/
+  .headerDesk .navDesk {
+    flex-basis: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .headerDesk .navDesk .navlistDesk {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    line-height: 45px;
+  }
+  .headerDesk .navDesk .navlistDesk .navlinkDesk {
+    list-style-type: none;
+    text-align: center;
+    width: 100px;
+    height: 100%;
+  }
+  .headerDesk .navDesk .navlistDesk .navlinkDesk a {
+    color: #888;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .headerDesk .navDesk .navlistDesk .navlinkDesk:hover {
+    background-color: #579b74;
+  }
+  .headerDesk .navDesk .navlistDesk .navlinkDesk:hover a {
+    color: #000;
+  }
+  .headerDesk .navDesk .navlistDesk .pageOn {
+    background-color: #579b74;
+  }
+  .headerDesk .navDesk .navlistDesk .pageOn a {
+    color: #000;
+  }
+
+  /* #endregion Nav*/
+
+  /* #endregion header */
+
+  /* #region Footer*/
+  .footer {
+    width: 100%;
+    background-color: #0c0c0c;
+    display: flex;
+  }
+  .footer .linhaVertivalFooter {
+    width: 1px;
+    background-color: #345e46;
+    margin: 5px 0;
+  }
+  .footer .logoFooter {
+    max-width: 20%;
+    margin: auto 0;
+  }
+  .footer .logoFooter .imgLogoFooter {
+    max-width: 100px;
+    display: block;
+    margin: auto;
+  }
+  .footer .logoFooter .h1LogoFooter {
+    text-align: center;
+    color: #999;
+  }
+  .footer .enderecoFooter {
+    width: 40%;
+    color: #999;
+    padding: 10px;
+    display: block;
+    margin: auto 0;
+  }
+  .footer .contatoFooter {
+    width: 40%;
+    margin: auto 0;
+    padding: 0 10px;
+    color: #999;
+  }
+  .footer .formContatoFooter .btnformContatoFooter {
+    background-color: #579b74;
+    font-size: 15px;
+    display: block;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    padding: 1px 5px;
+  }
+  /* #endregion Footer*/
+
+  /* #region MainIndex*/
+  .main {
+    width: 100%;
+  }
+
+  /* #region Serviços*/
+  .main .servicosMain {
+    width: 90%;
+    background-color: #579b74;
+    margin: 10px auto;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .main .servicosMain .tiposServicosMain {
+    margin-top: 5px;
+    margin-left: 5%;
+    font-size: 18px;
+    line-height: 2;
+  }
+  .main .servicosMain .infoServicosMain {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .main .servicosMain .infoServicosMain .infoHashtag {
+    font-size: 12px;
+  }
+  .main .servicosMain a {
+    margin-top: 5px;
+    border: none;
+    text-decoration: none;
+    background-color: #579b74;
+    cursor: pointer;
+    color: #273a05;
+    display: flex;
+    justify-content: flex-end;
+  }
+  /* #endregion Serviços*/
+
+  /* #region Sobre nos*/
+  .main .aboutUsMain {
+    width: 90%;
+    background-color: #579b74;
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .main .aboutUsMain .imgAboutUsMain img {
+    max-width: 100%;
+    margin: 20px;
+    border-radius: 5px;
+  }
+  .textAboutUsMain {
+    margin-left: 30px;
+  }
+  /* #endregion Sobre nos*/
+
+  /* #endregion MainIndex*/
+
+  /* #region MainServiços*/
+  .mainservicos {
+    width: 90%;
+    margin: 10px auto;
+    background-color: #579b74;
+    border-radius: 10px;
+  }
+  .mainservicos .explicaServicos {
+    padding: 5px;
+  }
+  .mainservicos .escolhaServicos {
+    width: 90%;
+    display: block;
+    padding: 10px;
+    margin: auto;
+  }
+  .mainservicos .escolhaServicos .espaco {
+    padding: 10px;
+  }
+  .mainservicos .escolhaServicos .btn {
+    background-color: #4a4b4a;
+
+    display: block;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+  .mainservicos .escolhaServicos .campoText {
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    display: block;
+  }
+  .mainservicos .escolhaServicos .TextTitle {
+    font-size: 20px;
+  }
+  /* #endregion Serviços*/
+
+  /* #region MainApp*/
+  .mainApp {
+    width: 94%;
+    margin: 10px auto;
+  }
+  .mainApp .sobreApp {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #579b74;
+    padding: 5px;
+  }
+  .mainApp .sobreApp .conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainApp .sobreApp .conteudo img {
+    max-width: 300px;
+    padding: 50px;
+  }
+  .mainApp .infoapp {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #579b74;
+    margin-top: 10px;
+    padding: 5px;
+  }
+  .mainApp .infoapp .conteudo {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  .mainApp .infoapp .conteudo .imgconteudo {
+    display: flex;
+  }
+  .mainApp .infoapp .conteudo .imgconteudo img {
+    margin-right: 10px;
+  }
+  /* #endregion */
+}
